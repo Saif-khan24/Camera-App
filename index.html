@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Camera</title>
+  </head>
+  <body>
+    <!-- <video src="https://www.youtube.com/watch?v=6Ij4SZC-big" controls autoplay></video>    control is true, give control of play -->
+    <!--autoplay is one more prop, it means as the page opens video will start to play-->
+
+    <div id="video-container">
+      <video autoplay style="transform: scale(1)"></video>
+      <!--never show controls in the video tag-->
+    </div>
+
+    <button id="record"><div></div></button>
+    <button id="capture"><div></div></button>
+
+    <button id='gallery'>Gallery</button>
+
+    <div class="filter-container">
+      <div class="filter" style="background-color: #f15cf762; background-blend-mode: color-burn"></div>
+      
+      <div class="filter" style="background-color: #0984e357; background-blend-mode: color-burn"></div>
+      
+      <div class="filter" style="background-color: #fbc5315e; background-blend-mode: color-burn"></div>
+      
+      <div class="filter" style="background-color: #44bd325e; background-blend-mode: color-burn;"></div>
+      
+      <div class="filter" style="background-color: #a7ff3359; background-blend-mode: color-burn;"></div>
+      
+      <div class="filter"></div>
+    </div>
+
+    <div class="zoom-container">
+      <div class="zoom-in">+</div>
+      <div class="zoom-out">-</div>
+    </div>
+
+    <script src="dbScript.js"></script>
+    <script src="script.js"></script>     <!--u can use the functionalites of upper script in lower script-->
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;     /*pre-sets*/
+        }
+        body{
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 16px;
+            background-color: rgba(255, 255, 0, 0.247);
+        }
+
+        .media-container{
+            margin-top: 10px;
+            height: 18rem;
+            width: 20rem;
+            border-radius: 5px;
+            border: 2px solid;
+        }
+
+        .media{
+            height: 80%;
+            width: 100%;
+            border: 2px solid;
+        }
+
+        button{
+            height: 10%;
+            width: 100%;
+            border: 1px solid;
+            font-weight: 550;
+        }
+
+        button.download{
+            background-color: rgba(0, 0, 255, 0.589);
+            color: white;
+        }
+
+        button.download:hover{
+            font-weight: 100;
+        }
+
+        button.delete:hover{
+            font-weight: 100;
+        }
+
+        button.delete{
+            background-color: red;
+            color: white;
+        }
+
+        img,
+        video{
+            height: 100%;
+            width: 100%;
+        }
+
+        #home{
+            width: 100%;
+            height: 3rem;
+            background-color: blue;
+            color: rgba(255, 255, 255, 0.801);
+        }
+
+        #home:hover{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="home">Open Camera</button>
+    
+    <script src="dbScript.js"></script>
+    <script>
+        setTimeout(function(){
+            viewMedia();        //it has to wait 
+        }, 100);     //100ms by experience in db variable we get access of db
+    </script>
+</body>
+</html>
